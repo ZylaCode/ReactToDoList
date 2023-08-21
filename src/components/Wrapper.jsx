@@ -3,6 +3,8 @@ import ToDoForm from "./ToDoForm";
 import { v4 as uuidv4 } from "uuid";
 import ToDo from "./ToDo";
 import EditForm from './EditForm';
+import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
+
 uuidv4();
 
 const Wrapper = () => {
@@ -42,7 +44,7 @@ const addToDo=(task)=>{
   
 
 return (
-    <div>
+    <div class="Wrapper">
         <ToDoForm addToDo={addToDo} />
 {tasks.map((task) =>
         task.isEditing ? (

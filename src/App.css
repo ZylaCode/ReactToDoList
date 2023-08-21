@@ -1,46 +1,62 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+  color: black;
+  background-color: #68dcc8;
+  background-image:  linear-gradient(#4ab0b0 4px, transparent 4px), linear-gradient(90deg, #4ab0b0 4px, transparent 4px), linear-gradient(#4ab0b0 2px, transparent 2px), linear-gradient(90deg, #4ab0b0 2px, #68dcc8 2px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -4px -4px, -4px -4px, -2px -2px, -2px -2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Wrapper {
+  background: #E5E4E2;
+  margin-top: 2rem;
   padding: 2rem;
-  text-align: center;
+  border-radius: 5px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.taskInput {
+padding: 16px;
+height: 2.5rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1 {color: black;
+display: flex;
+justify-content: center;
 }
 
-.card {
-  padding: 2em;
+.button {
+padding: 0.5rem;
+margin-left: 15px;
 }
 
-.read-the-docs {
-  color: #888;
+.trash {
+color: red;
+margin-right: 15px;
 }
 
-.completed {
-  text-decoration: line-through;
+.todo-input{
+padding: 16px;
+height: 2.5rem;
+}
+
+.todo-btn {
+padding: 0.5rem;
+margin-left: 15px;
 }

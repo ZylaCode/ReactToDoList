@@ -9,7 +9,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
     <div className='toDo'>
         <p onClick={()=>toggleComplete(task.id)} className={`${task.completed ? 'completed':""}`}>{task.task}</p>
         <div><FontAwesomeIcon onClick={() => deleteToDo(task.id)}
-                    icon={faTrash} size="lg" style={{color: "#ca0707",}} />
+                    icon={faTrash} className="trash" size="lg" />
             <FontAwesomeIcon onClick={()=> editToDo(task.id)} icon={faPenToSquare} size="lg" style={{color: "#65ecdc",}} />  
         </div>
     </div>
